@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">eCommerce</string>
+    <string name="logo_desc">This is logo</string>
+    <string name="slogan">Find, Discover, Choose and Buy anything Online</string>
+    <string name="login_btn_title">Already have an Account? Login</string>
+    <string name="join_now_btn_title">Join Now</string>
+
+
+</resources>
