@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
+import android.service.autofill.UserData;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
@@ -138,7 +139,9 @@ public class LoginActivity extends AppCompatActivity {
                                 Toast.makeText(LoginActivity.this, "Logged in Successfully!", Toast.LENGTH_SHORT).show();
                                 loadingBar.dismiss();
                                 Intent intent =new Intent(LoginActivity.this,HomeActivity.class);
+                                Prevalent.currentOnlineUsers=userData;
                                 startActivity(intent);
+
                             }
                         }
                         else{
